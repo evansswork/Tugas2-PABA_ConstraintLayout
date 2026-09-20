@@ -369,7 +369,7 @@
             android:textSize="12sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/card_fakultas" /> <!-- DIUBAH KE card_fakultas -->
+            app:layout_constraintTop_toBottomOf="@id/card_fakultas" />
 
         <LinearLayout
             android:id="@+id/sec_fasilitas"
@@ -454,9 +454,165 @@
                 android:text="Gedung serbaguna berkapasitas besar untuk acara internal."
                 android:textColor="#64748B"
                 android:textSize="12sp" />
-
         </LinearLayout>
 
+        <!-- ================= SDGs ================= -->
+        <TextView
+            android:id="@+id/tv_label_sdgs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:text="SUSTAINABLE DEVELOPMENT GOALS (SDGs)"
+            android:textColor="#334155"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sec_fasilitas" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card_sdgs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/bg_modern_card_rounded"
+            android:elevation="2dp"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_label_sdgs">
+
+            <TextView
+                android:id="@+id/tv_sdgs_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:text="Dengan kegiatan dan kolaborasi dalam bidang pendidikan, organisasi, pengabdian masyarakat, hingga festival, UK Petra terus-menerus berkontribusi dan berpartisipasi dalam menjalankan Sustainable Development Goals."
+                android:textColor="#64748B"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/box_sdg_1"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="20dp"
+                android:background="#E11D48"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_sdgs_desc" />
+
+            <TextView
+                android:id="@+id/tv_sdg1_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:text="No Poverty"
+                android:textColor="#0F172A"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/box_sdg_1"
+                app:layout_constraintTop_toTopOf="@id/box_sdg_1" />
+
+            <TextView
+                android:id="@+id/tv_sdg1_sub"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Mengakhiri kemiskinan dalam segala bentuk."
+                android:textColor="#64748B"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/tv_sdg1_title"
+                app:layout_constraintTop_toBottomOf="@id/tv_sdg1_title" />
+
+            <TextView
+                android:id="@+id/box_sdg_3"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="20dp"
+                android:background="#16A34A"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/box_sdg_1" />
+
+            <TextView
+                android:id="@+id/tv_sdg3_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:text="Good Health and Well-being"
+                android:textColor="#0F172A"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/box_sdg_3"
+                app:layout_constraintTop_toTopOf="@id/box_sdg_3" />
+
+            <TextView
+                android:id="@+id/tv_sdg3_sub"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Kehidupan sehat dan peningkatan kesejahteraan."
+                android:textColor="#64748B"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/tv_sdg3_title"
+                app:layout_constraintTop_toBottomOf="@id/tv_sdg3_title" />
+
+            <TextView
+                android:id="@+id/box_sdg_9"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="20dp"
+                android:background="#EA580C"
+                android:gravity="center"
+                android:text="9"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/box_sdg_3" />
+
+            <TextView
+                android:id="@+id/tv_sdg9_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:text="Industry, Innovation and Infrastructure"
+                android:textColor="#0F172A"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/box_sdg_9"
+                app:layout_constraintTop_toTopOf="@id/box_sdg_9" />
+
+            <TextView
+                android:id="@+id/tv_sdg9_sub"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Infrastruktur tangguh dan inovasi teknologi."
+                android:textColor="#64748B"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/tv_sdg9_title"
+                app:layout_constraintTop_toBottomOf="@id/tv_sdg9_title" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
