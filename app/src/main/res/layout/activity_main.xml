@@ -185,5 +185,69 @@
                 app:layout_constraintTop_toBottomOf="@id/tv_stat2_val" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <!-- ================= LOKASI KAMPUS ================= -->
+        <TextView
+            android:id="@+id/tv_label_lokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="LOKASI KAMPUS UTAMA"
+            android:textColor="#334155"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_statistik_kiri" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card_lokasi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/bg_modern_card_rounded"
+            android:elevation="2dp"
+            android:padding="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_label_lokasi">
+
+            <TextView
+                android:id="@+id/tv_icon_lokasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📍"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_alamat_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:text="Jl. Siwalankerto No. 121-131"
+                android:textColor="#0F172A"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tv_icon_lokasi"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_alamat_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Wonocolo, Surabaya, Jawa Timur, 60236"
+                android:textColor="#64748B"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/tv_alamat_1"
+                app:layout_constraintTop_toBottomOf="@id/tv_alamat_1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
