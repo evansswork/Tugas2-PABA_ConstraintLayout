@@ -73,13 +73,117 @@
             android:layout_marginEnd="24dp"
             android:background="#1E293B"
             android:lineSpacingExtra="5dp"
-            android:padding="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="48dp"
             android:text="Universitas Kristen Petra (UK Petra) adalah perguruan tinggi swasta nasional di Surabaya yang berdiri sejak tahun 1961, berkomitmen membentuk global socioleaders dengan standar akademik unggul."
             android:textColor="#CBD5E1"
             android:textSize="13sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_nama_kampus" />
+
+        <!-- ================= STATISTIK ================= -->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card_statistik_kiri"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-28dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_modern_card_rounded"
+            android:elevation="4dp"
+            android:padding="18dp"
+            app:layout_constraintEnd_toStartOf="@id/card_statistik_kanan"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header_bg">
+
+            <TextView
+                android:id="@+id/tv_stat1_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DIDIRIKAN"
+                android:textColor="#64748B"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_stat1_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="2 Sept 1961"
+                android:textColor="#0F172A"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_stat1_title" />
+
+            <TextView
+                android:id="@+id/tv_stat1_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Yayasan PPPK Petra"
+                android:textColor="#475569"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_stat1_val" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card_statistik_kanan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/bg_modern_card_rounded"
+            android:elevation="4dp"
+            android:padding="18dp"
+            app:layout_constraintBottom_toBottomOf="@id/card_statistik_kiri"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/card_statistik_kiri"
+            app:layout_constraintTop_toTopOf="@id/card_statistik_kiri">
+
+            <TextView
+                android:id="@+id/tv_stat2_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MAHASISWA"
+                android:textColor="#64748B"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_stat2_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="7.000+"
+                android:textColor="#0F172A"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_stat2_title" />
+
+            <TextView
+                android:id="@+id/tv_stat2_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Aktif &amp; Dinamis"
+                android:textColor="#0284C7"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_stat2_val" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
